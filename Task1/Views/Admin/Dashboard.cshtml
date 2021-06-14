@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+@model  List<Task1.Models.Student>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Students", "Dashboard", "Admin")</li>
+                <li>@Html.ActionLink("Create Students", "Create", "Admin")</li>
+                <li>@Html.ActionLink("Depatmrnts", "Department", "Admin")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table table-condensed">
+        <tr>
+            <th>Id</th>
+            <th>Department Id</th>
+            <th>Name</th>
+            <th>Date Of Birth</th>
+            <th>Credit</th>
+            <th>CGPA</th>
+            <th></th>
+            <th></th>
+        </tr>
+        @foreach (var student in @Model)
+        {
+    <tr>
+        <td>@student.Id</td>
+        <td>@student.Dept_Id</td>
+        <td>@student.Name</td>
+
+        <td>@student.DOB</td>
+        <td>@student.Credit</td>
+        <td>@student.CGPA</td>
+        <td><a class="btn btn-success" href="/Admin/Edit/@student.Id">Edit</a></td>
+        <td><a class="btn btn-danger" href="/Admin/Delete/@student.Id">Delete</a> </td>
+    </tr>
+        }
+
+    </table>
+    </div>

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+@model  Task1.Models.Student
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Students", "Dashboard", "Admin")</li>
+                <li>@Html.ActionLink("Create Students", "Create", "Admin")</li>
+                <li>@Html.ActionLink("Depatmrnts", "Department", "Admin")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2>Create</h2>
+
+<div>
+    <form action="/Admin/Create" method="post">
+        <input type="text" name="Dept_Id" class="form-control" placeholder="dept id.." required>
+        <input type="text" name="Name" class="form-control" placeholder="name..">
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        <input type="date" name="DOB" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+        <input type="text" name="Credit" class="form-control" placeholder="ctrdit..">
+        @Html.ValidationMessageFor(model => model.Credit, "", new { @class = "text-danger" })
+        <input type="number" name="CGPA" class="form-control" placeholder="cgpa.." step="any">
+        @Html.ValidationMessageFor(model => model.CGPA, "", new { @class = "text-danger" })
+        <input type="submit" class="btn btn-block" value="Add" />
+    </form>
+</div>
+
