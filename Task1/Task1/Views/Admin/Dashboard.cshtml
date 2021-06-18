@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Dashboard";
 }
-@model  List<Task1.Models.Student>
+@model Task1.Models.ViewModel.StudentDepartment
 
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -28,7 +28,7 @@
     <table class="table table-condensed">
         <tr>
             <th>Id</th>
-            <th>Department Id</th>
+            <th>Department Name</th>
             <th>Name</th>
             <th>Date Of Birth</th>
             <th>Credit</th>
@@ -36,11 +36,19 @@
             <th></th>
             <th></th>
         </tr>
-        @foreach (var student in @Model)
+        @foreach (var student in @Model.Students)
         {
     <tr>
         <td>@student.Id</td>
-        <td>@student.Dept_Id</td>
+        @foreach (var dept in @Model.Departments)
+        {
+            { 
+            if (student.Dept_Id == dept.Id)
+            {
+                <td>@dept.Name</td>
+            }
+            }
+        }
         <td>@student.Name</td>
 
         <td>@student.DOB</td>
@@ -52,4 +60,4 @@
         }
 
     </table>
-    </div>
+</div>

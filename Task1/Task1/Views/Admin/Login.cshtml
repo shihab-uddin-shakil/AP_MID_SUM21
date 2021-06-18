@@ -11,7 +11,7 @@
         @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
         <input type="password" name="Password" class="form-control" placeholder="Password..">
         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-    <span class="text-danger"> >@ViewBag.Message</span>
+    <span class="text-danger"> @ViewBag.Message</span>
 
         <input type="submit" class="btn btn-block" value="Login" />
     </form>

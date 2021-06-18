@@ -1,8 +1,8 @@
-﻿
+﻿@model Task1.Models.ViewModel.StudentDepartment
 @{
     ViewBag.Title = "Create";
 }
-@model  Task1.Models.Student
+
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -27,15 +27,23 @@
 
 <div>
     <form action="/Admin/Create" method="post">
-        <input type="text" name="Dept_Id" class="form-control" placeholder="dept id.." required>
+        <select name="Dept_Id" class="form-control">
+            <option value="null" selected disabled>--Select--</option>
+            @foreach (var c in Model.Departments)
+            {
+                <option value="@c.Id">@c.Name</option>
+            }
+        </select>
+        @Html.ValidationMessageFor(model => Model.Student.Dept_Id, "", new { @class = "span" })
+
         <input type="text" name="Name" class="form-control" placeholder="name..">
-        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(model => Model.Student.Name, "", new { @class = "span" })
         <input type="date" name="DOB" class="form-control" placeholder="">
-        @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(model => Model.Student.DOB, "", new { @class = "span" })
         <input type="text" name="Credit" class="form-control" placeholder="ctrdit..">
-        @Html.ValidationMessageFor(model => model.Credit, "", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(model => Model.Student.Credit, "", new { @class = "span" })
         <input type="number" name="CGPA" class="form-control" placeholder="cgpa.." step="any">
-        @Html.ValidationMessageFor(model => model.CGPA, "", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(model => Model.Student.CGPA, "", new { @class = "span" })
         <input type="submit" class="btn btn-block" value="Add" />
     </form>
 </div>

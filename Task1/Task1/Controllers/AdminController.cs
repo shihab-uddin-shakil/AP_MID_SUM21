@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Dynamic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Task1.Models;
 using Task1.Models.Database;
+
+using Task1.Models.ViewModel;
 
 namespace Task1.Controllers
 {
@@ -18,20 +21,40 @@ namespace Task1.Controllers
         }
         public ActionResult Dashboard()
         {
+            // Database db = new Database();
+           // var students = db.Students.GetAll();
+            //return View(students);
+
+           
             Database db = new Database();
-            var students = db.Students.GetAll();
-            return View(students);
+            StudentDepartment combodata = new StudentDepartment();
+            //Department combodata = new Department();
+           // var students = db.Students.GetAll();
+            combodata.Departments = db.Departments.GetAll();
+            combodata.Students = db.Students.GetAll();
+            return View(combodata);
         }
         public ActionResult Department()
         {
             Database db = new Database();
             var departments = db.Departments.GetAll();
+          
             return View(departments);
         }
         public ActionResult Create()
         {
             Student s = new Student();
-            return View(s);
+            Database db = new Database();
+            StudentDepartment combodata = new StudentDepartment();
+            //Department combodata = new Department();
+            combodata.Student = s;
+            combodata.Departments= db.Departments.GetAll();
+            //dynamic combodata = new ExpandoObject();
+            //combodata.Student = p;
+
+            //combodata.Departments = db.Departments.GetAll();
+            return View(combodata);
+            
         }
         [HttpPost]
         public ActionResult Create(Student s)
