@@ -1,0 +1,6 @@
+F:\Github-represotory\FinalTermTask\BEL\bin\Debug\BEL.dll
+F:\Github-represotory\FinalTermTask\BEL\bin\Debug\BEL.pdb
+F:\Github-represotory\FinalTermTask\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+F:\Github-represotory\FinalTermTask\BEL\obj\Debug\BEL.dll
+F:\Github-represotory\FinalTermTask\BEL\obj\Debug\BEL.pdb
+F:\Github-represotory\FinalTermTask\BEL\obj\Debug\BEL.csprojAssemblyReference.cache
