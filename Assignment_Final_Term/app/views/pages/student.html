@@ -1,0 +1,25 @@
+<div>
+    <h1>Student List</h1>
+
+    <table>
+        <tr>
+            <th>#Id</th>
+            <th>Student Name</th>
+            <th>Department</th>
+            <th>Date Of Birth</th>
+            <th>Credit complited</th>
+            <th>Current Cgpa</th>
+
+
+        </tr>
+        <tr ng-repeat="s in students">
+            <td>{{s.Id}}</td>
+            <td>{{s.Name}}</td>
+            <td>{{s.Dept_Id}}</td>
+            <td>{{s.DOB}}</td>
+            <td>{{s.Credit}}</td>
+            <td>{{s.CGPA}}</td>
+        </tr>
+
+    </table>
+</div>
