@@ -1,0 +1,42 @@
+
+<div class="row ">
+			<div class="col-md-12 col-lg-12 col-sm-12">
+				<div class="white-box">
+					<div class="col-md-3 col-sm-4 col-xs-6 pull-right">
+						<select class="form-control pull-right row b-none">
+							<option>March 2017</option>
+							<option>April 2017</option>
+							<option>May 2017</option>
+							<option>June 2017</option>
+							<option>July 2017</option>
+						</select>
+					</div>
+					<h3 class="box-title">Recent sales</h3>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>NAME</th>
+									<th>Category</th>
+									<th>Selling Price</th>
+									<th>Buying Price</th>
+                  	<th>Stored</th>
+								</tr>
+							</thead>
+							<tbody>
+                <tr ng-repeat="p in products">
+                    <td>{{p.Id}}</td>
+                    <td>{{p.Name}}</td>
+                    <td>{{p.Product_Type.Title}}</td>
+                    <td>{{p.Selling_Price}}</td>
+                      <td>{{p.Buying_Price}}</td>
+                    <td>{{p.Stored}}</td>
+                </tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
