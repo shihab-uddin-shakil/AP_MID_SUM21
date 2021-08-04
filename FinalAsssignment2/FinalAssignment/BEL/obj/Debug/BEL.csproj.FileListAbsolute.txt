@@ -4,3 +4,15 @@ C:\Users\SR COMPUTER5\source\repos\FinalAssignment\BEL\obj\Debug\BEL.csprojAssem
 C:\Users\SR COMPUTER5\source\repos\FinalAssignment\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
 C:\Users\SR COMPUTER5\source\repos\FinalAssignment\BEL\obj\Debug\BEL.dll
 C:\Users\SR COMPUTER5\source\repos\FinalAssignment\BEL\obj\Debug\BEL.pdb
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\BEL.dll
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\BEL.pdb
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\DAL.dll
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\EntityFramework.dll
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\DAL.pdb
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\DAL.dll.config
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\bin\Debug\EntityFramework.xml
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\obj\Debug\BEL.csprojAssemblyReference.cache
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\obj\Debug\BEL.csproj.CopyComplete
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\obj\Debug\BEL.dll
+F:\Github-represotory\AP_MID_SUM21\FinalAsssignment2\FinalAssignment\BEL\obj\Debug\BEL.pdb

@@ -44,8 +44,15 @@
     <Compile Include="CategoryDetail.cs" />
     <Compile Include="CategoryModel.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="OrderModel.cs" />
     <Compile Include="ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{BB5A7FFC-A6CB-4972-BA58-A5872EA6D815}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

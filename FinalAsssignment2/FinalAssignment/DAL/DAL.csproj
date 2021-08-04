@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllReport.cs">
+      <DependentUpon>ProductMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Buy_Products.cs">
+      <DependentUpon>ProductMS.tt</DependentUpon>
+    </Compile>
     <Compile Include="CategoryRepo.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Product.cs">
@@ -78,9 +84,16 @@
       <DependentUpon>ProductMS.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sell_Products.cs">
+      <DependentUpon>ProductMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>ProductMS.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="OrderRepo.cs" />
     <None Include="packages.config" />
     <EntityDeploy Include="ProductMS.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -89,6 +102,9 @@
     <None Include="ProductMS.edmx.diagram">
       <DependentUpon>ProductMS.edmx</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ProductMS.Context.tt">
@@ -101,9 +117,6 @@
       <DependentUpon>ProductMS.edmx</DependentUpon>
       <LastGenOutput>ProductMS.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

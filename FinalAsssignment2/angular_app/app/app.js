@@ -30,6 +30,14 @@ app.config(["$routeProvider","$locationProvider",function($routeProvider,$locati
         templateUrl : "views/pages/category.html",
         controller: 'category'
     })
+    .when("/neworder", {
+        templateUrl : "views/pages/neworder.html",
+        controller: 'neworder'
+    })
+    .when("/orderdetail", {
+        templateUrl : "views/pages/orderdetail.html",
+        controller: 'orderdetail'
+    })
     .otherwise({
         redirectTo:"/"
     });

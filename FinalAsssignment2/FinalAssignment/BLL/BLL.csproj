@@ -48,6 +48,7 @@
     <Compile Include="CategoryService.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="MapperConfig\AutoMapperSettings.cs" />
+    <Compile Include="OrderService.cs" />
     <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
